@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="main-section">
+        <div class="main-div">
+            <div class="form" id="register-div">
+                <form action="" method="POST" class="form-div" id="registration">
+                    <h1>Registration From</h1>
+                    <div>
+                        <input type="text" name="Name" placeholder="Name...">
+                        <div class="error-text" id="error_name"></div>
+                    </div>
+                    <div>
+                        <div>
+                            <input type="email" name="email" placeholder="email...">
+                            <div class="error-text" id="error_email"></div>
+                        </div>
+                        <div>
+                        <input type="password" name="password" placeholder="password...">
+                        <div class="error-text" id="error_password"></div>
+                    </div>
+                    <div>
+                        <input type="password" name="password2" placeholder="Repead password...">
+                        <div class="error-text" id="error_password2"></div>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender">
+                        <label>Male</label>
+                        <input type="radio" name="gender">
+                        <label>Female</label>
+                        <div class="error-text" id="error_gender"></div>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="agree">
+                        <label for="">I agree terms and conditions</label>
+                        <div class="error-text" id="error_agree"></div>
+                    </div>
+
+                    <button type="submit">REGISTER</button>
+                    <p class="text">Already have an account?<span class="link" id="link">Log in</span></p>
+                </form>
+            </div>
+            <div class="login-div" id="login-div">
+                <form class="login-form" action="" method="POST" id="login">
+                    <h1>Log In Form</h1>
+                    <input type="email" name="email" placeholder="Enter your email...">
+                    <input type="password" name="password" placeholder="Enter your password...">
+                    <button>Log In</button>
+                    <p class="text">Not registere yet?<span class="link1" id="link1">Register</span></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/register.js"></script>
+</body>
+</html>
